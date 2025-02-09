@@ -1,0 +1,28 @@
+/* Qwenlm Theme */
+html, body {
+    background-color: #282c34; /* Dark blue/gray */
+    color: rgb(149, 4, 4); /* Light gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure full width */
+}
+
+body {
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    color: lightgreen;
+    font-size: 1.2em;
+}
+
+/* Headers and links */
+h1, h2, h3 {
+    color: #61afef; /* Light blue */
+    font-size: 1.2em;
+}
+
+a {
+    color: #e06c75; /* Salmon pink */
+    font-size: 1em;
+    font-weight: bold;
+}

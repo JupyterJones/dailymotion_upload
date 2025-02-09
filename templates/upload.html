@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video to Dailymotion</title>
+</head>
+<body>
+    <h1>Upload a Video to Dailymotion</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="file">Select Video File:</label>
+        <input type="file" name="file" id="file" accept="video/*" required><br><br>
+        
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" placeholder="Enter video title"><br><br>
+        
+        <label for="tags">Tags (comma-separated):</label>
+        <input type="text" name="tags" id="tags" placeholder="Enter tags"><br><br>
+        
+        <button type="submit">Upload Video</button>
+    </form>
+</body>
+</html>
